@@ -17,16 +17,29 @@ colors:
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ body {
+    background-image: url(img/bg.jpg);
+ }
+
+ div {
+     background-color: white;
+     margin: 50px 30px 50px 30px;
+ }
+
 #site_header {
-    background-color: #ff8523
+    background-color: #ff8523;
+    height: 120px;
 }
 
-.main_navigation > a{
+.main_navigation > a:link{
     border: 1px solid white;
-    border-radius: 3px round;
-    border-style: solid;
-    
-
+    border-radius: 5px;
+    border-style: solid round;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 2px 2px;
+    text-decoration: none;
 }
 
 h2 {
@@ -42,3 +55,14 @@ p2 {
     
 }
 
+table, td {
+    border: 1px solid #1fabe5;
+    border-collapse: collapse;
+}
+
+table > thead > tr > td {
+    background-color: #1fabe5;
+    color: white;
+    padding: 15px;
+    border: 1px solid black;
+}
