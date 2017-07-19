@@ -19,24 +19,27 @@ colors:
 
  body {
     background-image: url(img/bg.jpg);
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 2px solid #ffd24a;
+    border-radius: 4px;
  }
 
- div {
+ #page_content {
      background-color: white;
-     margin: 50px 30px 50px 30px;
+     padding: 20px;
  }
 
- body > div {
-     border: 1px solid #ffd24a;
+ #page_content section {
+     border-bottom: 4px solid #dddddd;
+     padding-bottom: 30px;
  }
 
-#site_header {
+header {
     background-color: #ff8523;
-    padding: 20px;
-    height: 120px;
-
-    /* text-align: justify; */
-
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 140px;
 }
 
 .main_navigation > a:link{
@@ -73,6 +76,10 @@ table, td {
     
 }
 
+table {
+    width: 100%;
+}
+
 table > thead > tr >td {
     background-color: #1fabe5;
     color: white;
@@ -82,7 +89,7 @@ table > thead > tr >td {
 }
 
 tbody > tr > td > img {
-    max-width: 25%;
+    max-width: 50px;
     height: auto;
     width: auto;
 }
@@ -90,18 +97,65 @@ tbody > tr > td > img {
 
 .name {
     background-color: #ff8523;
-    height: 75px;
-    border-radius: 5px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: white;
+    border-radius: 6px;
+    padding: 25px;
     text-align: center;
-    font-weight: bold;
+    color: white;
+    
+}
 
+.city_container {
+    padding: 20px 0;
+}   
+
+
+td{
+    padding: 5px;
+}
+
+tbody td img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
 }
 
 form {
     background-color: #dddddd;
-    padding: 25px;
+    padding: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+}
+
+form > div {
+    background-color: #dddddd;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#bio {
+    border: 1px solid #1fabe5;
+    width: 98%;
+    height: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+#submit_button {
+    background-color: #1fabe5;
+    border: 0;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
 }
