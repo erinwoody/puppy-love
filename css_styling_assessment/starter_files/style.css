@@ -26,9 +26,17 @@ colors:
      margin: 50px 30px 50px 30px;
  }
 
+ body > div {
+     border: 1px solid #ffd24a;
+ }
+
 #site_header {
     background-color: #ff8523;
+    padding: 20px;
     height: 120px;
+
+    /* text-align: justify; */
+
 }
 
 .main_navigation > a:link{
@@ -38,31 +46,62 @@ colors:
     font-weight: bold;
     text-align: center;
     color: white;
-    padding: 2px 2px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
     text-decoration: none;
+    top: 20px;
 }
 
-h2 {
+h2, h3 {
     color: #1fabe5;
 }
 
+
+ul {
+    font-weight: bold;
+}
 
 p a {
     color: #1fabe5;
 }
 
-p2 {
+table, td {
+    border: 1px solid #1fabe5;
+    border-collapse: collapse;  
     
 }
 
-table, td {
-    border: 1px solid #1fabe5;
-    border-collapse: collapse;
-}
-
-table > thead > tr > td {
+table > thead > tr >td {
     background-color: #1fabe5;
     color: white;
     padding: 15px;
-    border: 1px solid black;
+    border: 1px solid #046c97;
+   
+}
+
+tbody > tr > td > img {
+    max-width: 25%;
+    height: auto;
+    width: auto;
+}
+
+
+.name {
+    background-color: #ff8523;
+    height: 75px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+form {
+    background-color: #dddddd;
+    padding: 25px;
 }
